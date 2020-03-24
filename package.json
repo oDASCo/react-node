@@ -8,6 +8,7 @@
     "npm": "5.0.3"
   },
   "dependencies": {
+    "concurrently": "^5.1.0",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.5",
@@ -18,7 +19,9 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
   "repository": {
     "type": "git",
