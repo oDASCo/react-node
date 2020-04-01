@@ -20,6 +20,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require('./routes/authRoutes')(app);
+console.log(keys.mongoURI);
 mongoose.connect(keys.mongoURI,{
     useNewUrlParser: true,
     useUnifiedTopology: true
