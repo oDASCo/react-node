@@ -12,7 +12,6 @@ const SurveyNew  = () =>  <h2>SurveyNew</h2>;
 
 class App extends Component {
     componentDidMount() {
-        console.log(this.props);
         this.props.fetchUser();
     }
 
