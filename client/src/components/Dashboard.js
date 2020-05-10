@@ -12,7 +12,6 @@ const Dashboard  = () =>  {
                 </Link>
             </div>
         </div>
-
     )
 };
 
